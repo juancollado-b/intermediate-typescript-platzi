@@ -27,7 +27,7 @@ export const addProduct = (data: CreateProductDto): Product => {
 };
 
 export const updateProduct = (
-    id: string,
+    id: Product["id"],
     changes: UpdateProductDto
 ): Product => {
     const productIndex = products.findIndex((product) => product.id == id);
