@@ -6,3 +6,4 @@ export interface CreateProductDto
 }
 
 export interface UpdateProductDto extends Partial<CreateProductDto> {}
+export interface findProductsDto extends Readonly<Partial<Product>> {}
